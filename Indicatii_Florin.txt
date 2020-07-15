@@ -1,0 +1,138 @@
+1.
+arhitectura cea peste care este construit unity (entity component system) 
+scene
+game object (entitate)
+scripts (componente) //https://docs.unity3d.com/ScriptReference/Behaviour.html
+
+2. 
+ai procedural (un pattern bine def senzori div componente ajuta inamicul pt a reactiona)
+cand atinge martgine sa se intoarca invers
+verificari daca este pe layerul de ground
+vitez de deplasare 
+forta de saritura
+
++boss ai (retele neuronale)
+
+3.
++score ui
+mai mici ui stufff
+scor prinul in colt (points)
+scor fix pt enemy
++point de la monede
+monezi future production pt cumparat chestii in joc
+mai multe nivele
+inamici mai greu de batut 
+
+variat elemente damage tepi
+
+la nivel de boss - player moare extra vieti  (reincepere de la boss)
+boss pe masura ce tot joci invata (reinvie + invata din experieta si trebuie batut de m2 ori)
+poate un powerups pt player
+
++bonus teorie de game design (principii) form follows function
+
+stage 1 (protejeaza ceva sare deasupra) defensive aggresive 
+(mini inamici)
+
+stage 2 (ceva) atras in capcana 
+bossul incearaca sa fie mai defensiv
+
+4.
+vroiam sa fac un entertainment proj si vreau sa fie un omagiu jocului retro cu infl moderne
+influiente moderne : 
+gave dev conglomerat de probleme (mai multe probleme fizica ,gameplay ,game design ,ai ,sound engeniring)
++ muzica mai incet
+
+citeste inteligenta artificiala articole
+goal orieted action playing
+https://gamedevelopment.tutsplus.com/tutorials/goal-oriented-action-planning-for-a-smarter-ai--cms-20793
+grafuri costuri...cost mic sol buna...intai actiune asta dupa aia...etc
+
+5.
+knolege in exprimare
+in engine folosim componente de righit bodya componetea din engine o mult de prop fizice ale obj prop precum velociyty drag 
+folosind vector 2d in directia de saritura jum force vector de vizteza pt commponenta schimb state pt a putea identifica starea in care se afla playerul
+state machine pt stari se comporta diferit 
+explicat alg ce fac creez asta...si il atribui la componenta x
+ comp sunt clase
+un nou vector 2 x neschimbat x si nou y
+new Vector2(rb.velocity.x, jumpForce);
+
+6.
+camera traching din engine target object urmarit de camera si parametrii ca camera sa urmareacsa playerul cu anumita viteza 
+script ce updateaza la fiecare calcule interpolare/elasticitate la camera toleranta() deadzone target obj camera nu se modifica
+
+arhitectura component based => v
+game obj trage colider (froma) palyer controler (viata)
+
+7.
+evitare formulari de cod
+playerul meu
+prop righ body pt al directiona pe partea ground
+urca pe scara anulez gravity pe rb
+
+8.
+cum creez nivelul
+tilemap editor
+componente din proiect pt a face behaviour
+
+9.
+nivel crestere
+nu liniar
+balas
+zone cu inamici si fara inamici
+feeling de greutate
+nr inamici intr o sec sau mai multe
+viata ascunsa
+etc...
+simt de explorare
+
+10.
+direct 3d
+direct x12
+elemente facultative
+-grafica pe calculator
+elemente din facultate : oop mostneire 
+fsm : state machines (graf de strai finite) /
+(grafuri) animator controler animatie pe care le controlez din cod 
+animator controller 
+ai /
+arhitectura
+componente
+cum functioneaza ele
+game design balace nivel , crearea universului fff (form follows...)
+comp base arhitecture - sparte in comp pt a face o logica modularizata
+
+11.
+scade pe formulari
+pe cum raspunzi la formulari
++ explicatie academica
+hard coded state machine
+
+ce alte tipuri de abordari de ai
+documentat pe mai multe domenii legate de proiect
+https://www.gamasutra.com/view/news/269634/7_examples_of_game_AI_that_every_developer_should_study.php
+path find
+
+fara diminutive
+
+12.
+alte intrebari
+intrebari stupide abstracte in termeni high lvl
+am implementat in functie de arhitectura unity pt a putea extinde propriile custom components pt a dat comportament 
+nu folosi prea multa engleza
+engine ca base layer pt a crea componentele emele pt interactiona cu comp eng (comp sunet caracter animation)
+academic cuvant magic
+
+13.
+tu ai desenat
+ma am concentrat la alta chestie a construi noi elemente de joc
+nivele noi folosinduma de principii de game design (general) ui sunet etc...
+lvl desig ()
+puteam sa folosesc si engineul gresit => rezultate gresite
+input prin a verifica fiecare tasta in parte
+imput management interactionea cu deviceul de input 
+input management state (get axis horizontal)
+am ales din motive academice
+
+curata tot ce se poate
